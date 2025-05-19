@@ -1,0 +1,278 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+a{
+    transition: all 300ms ease;
+}
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.logo{
+    font-size:1.5rem;
+}
+
+.logo:hover{
+    cursor:default;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color:gray;
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
+#home{
+    height: 20vh; 
+    padding: 3rem;
+    text-align: center;
+}
+
+#name{
+    color: coral;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#passion{
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#welcome{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*aboutme*/
+#AboutMe{
+    gap: 8rem; 
+    height: 30vh; 
+    padding:2rem; 
+}
+
+.subheading{
+    color:gray;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1 rem;
+    gap: 1.5rem;
+}
+
+#mypic{
+    display: flex;
+    width: 200px; 
+    height: 200px; 
+    margin: auto, 0;
+    justify-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#about-text{
+    display:flexbox;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/*Experience*/
+#experience{
+    gap: 8rem; 
+    height: 40vh; 
+    padding: 2rem;
+}
+
+#content-box{
+    display: flex; 
+    padding: 3rem;
+    justify-content: center;
+    gap: 10rem;
+}
+
+#work-exp{
+    padding: 1rem; 
+    width: 10px;
+    height: 8px;
+    background-color: antiquewhite;
+}
+
+.company{
+    font-size: 2rem;
+}
+
+.title{
+    font-size: 1.5rem; 
+}
+
+.work-content{
+    font-size: 1.25rem;
+}
+
+/*Projects */
+#projects{
+    gap: 8rem; 
+    height: 120vh; 
+    padding:2rem;
+}
+
+.scrolling-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.flip-card {
+    padding: 3rem;
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+    display:flex;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: coral;
+    color: black;
+    object-fit: cover;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: coral;
+    color: white;
+    transform: rotateY(180deg);
+    padding-top: 1rem;
+  }
+
+  .flip-card-text{
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+#desc{
+    padding:3rem;
+}
+
+.buttons{
+    color:blanchedalmond;
+    cursor:pointer;
+    font-size: 1rem;
+}
+/*contact*/
+
+#contacts{
+    gap: 8rem; 
+    height: 80vh; 
+    padding:2rem;
+}
+
+#contactlist{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button{
+    width: 200px; 
+    height: 200px; 
+    margin: auto, 0;
+    border-style: hidden;
+    background: none;
+}
+
+img{
+    width: 100px; 
+    height: 100px; 
+    margin: auto, 0;
+}
+
+input[type=text] {
+    width: 80%;
+    height: 2rem;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    
+}
+
+#contactme{
+    background-color: rgba(255, 127, 80, 0.296);
+    border-radius: 2rem;
+    width: 60%;
+    padding: 2rem;
+    margin: auto;
+}
+
+#submit-button, button{
+    width: 80px; 
+    height: 30px; 
+    border-radius: 3rem;
+    background-color: blanchedalmond;
+    border:none;
+}
+
+#submit-button:active, button:active{
+    background-color: white;
+}
+
